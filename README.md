@@ -40,3 +40,7 @@ The app is **ad-hoc code signed** (not notarized, not distributed). It's a perso
 - The usage endpoint is reverse-engineered and undocumented. If Anthropic changes its shape, decoding will fail and the app will show an error state (it won't crash) — `Sources/Quotidian/Services/UsageAPIClient.swift` is where to adjust field names/types if that happens.
 - If the Keychain item's stored format changes, update `Sources/Quotidian/Services/CredentialParser.swift` (it already tries a nested `claudeAiOauth.accessToken` JSON shape, a flat `accessToken` JSON shape, and a plain-text token, in that order).
 - Rebuilding repeatedly during development may occasionally cause macOS to re-prompt for Keychain access, since ad-hoc signatures can change between builds. This settles down once you stop rebuilding.
+
+## License
+
+[MIT](LICENSE)
