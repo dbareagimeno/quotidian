@@ -1,3 +1,5 @@
+<img src="Packaging/AppIcon.png" alt="Quotidian icon" width="120" align="right">
+
 # Quotidian
 
 A native macOS menu bar app that shows Claude's 5-hour and weekly (7-day) subscription rate-limit usage as small gauges next to the clock/battery/Wi-Fi icons.
