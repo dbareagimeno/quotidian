@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ClaudeUsageMenuBarApp: App {
+struct QuotidianApp: App {
     @State private var viewModel = UsageViewModel()
 
     var body: some Scene {

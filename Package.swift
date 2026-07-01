@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "ClaudeUsageMenuBar",
+    name: "Quotidian",
     platforms: [
         .macOS(.v14)
     ],
@@ -15,16 +15,16 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "ClaudeUsageMenuBar",
-            path: "Sources/ClaudeUsageMenuBar"
+            name: "Quotidian",
+            path: "Sources/Quotidian"
         ),
         .testTarget(
-            name: "ClaudeUsageMenuBarTests",
+            name: "QuotidianTests",
             dependencies: [
-                "ClaudeUsageMenuBar",
+                "Quotidian",
                 .product(name: "Testing", package: "swift-testing")
             ],
-            path: "Tests/ClaudeUsageMenuBarTests"
+            path: "Tests/QuotidianTests"
         )
     ]
 )

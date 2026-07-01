@@ -1,5 +1,5 @@
 import Testing
-@testable import ClaudeUsageMenuBar
+@testable import Quotidian
 import Foundation
 
 struct UsageAPIClientDecodingTests {

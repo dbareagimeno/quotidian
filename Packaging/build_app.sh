@@ -1,12 +1,12 @@
 #!/bin/bash
-# Builds ClaudeUsageMenuBar in release mode and assembles a double-clickable
+# Builds Quotidian in release mode and assembles a double-clickable
 # .app bundle, without requiring Xcode. Run from anywhere; paths are resolved
 # relative to this script.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-APP_NAME="ClaudeUsageMenuBar"
+APP_NAME="Quotidian"
 APP_BUNDLE="$ROOT_DIR/$APP_NAME.app"
 
 echo "Building release binary..."
